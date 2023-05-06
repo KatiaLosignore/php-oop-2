@@ -4,7 +4,7 @@ require_once __DIR__ .'/Category.php';
 
 class Product 
 {
-    protected$name;
+    protected $name;
     protected $brand;
     protected $code;
     protected $price;
@@ -13,11 +13,11 @@ class Product
 
     public function __construct($name, $brand, $code, $price, $description, Category $category)
     {
-        $this->name = $name;
-        $this->brand = $brand;
-        $this->code = $code;
-        $this->price = $price;
-        $this->description = $description;
+        $this->setName($name);
+        $this->setBrand($brand);
+        $this->setCode($code);
+        $this->setPrice($price);
+        $this->setDescription($description);
         $this->setCategory($category);
     }
 
@@ -32,6 +32,59 @@ class Product
     {
         return $this->category;
     }
+
+    public function setName($name)
+    {
+        $this->name = $name;
+    }
+
+    public function getName()
+    {
+        return $this->name;
+    }
+
+    public function setBrand($brand)
+    {
+        $this->brand = $brand;
+    }
+
+    public function getBrand()
+    {
+        return $this->brand;
+    }
+
+    public function setCode($code)
+    {
+        $this->code = $code;
+    }
+
+    public function getCode()
+    {
+        return $this->code;
+    }
+
+    
+    public function setPrice($price)
+    {
+        $this->price = $price;
+    }
+
+    public function getPrice()
+    {
+        return $this->price;
+    }
+
+    public function setDescription($description)
+    {
+        $this->description = $description;
+    }
+
+    public function getDescription()
+    {
+        return $this->description;
+    }
+
+
 
 }
 
