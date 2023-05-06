@@ -1,4 +1,4 @@
-<div class="card me-5" style="width:250px">
+<div class="card me-5" style="width:1000px">
     <div class="card-header">
         <?php echo $product->getCategory()->getLabel() ?>
         <i class="<?php echo $product->getCategory()->getIcon() ?>"></i>

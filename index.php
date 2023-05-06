@@ -17,7 +17,7 @@ include_once __DIR__ .'/data/db.php';
         <main>
             <div class="container h-50">
                 <section id="food-products">
-                    <h2 class="mt-4">Food <i class="<?php echo FoodProduct::$icon ?>"></i></h2>
+                    <h2 class="mt-4 mb-4">Food <i class="<?php echo FoodProduct::$icon ?>"></i></h2>
                     <div class="d-flex">
                         <?php foreach($food_products as $product) {
                             include __DIR__ .'/includes/cards/food_card.php';
@@ -26,7 +26,7 @@ include_once __DIR__ .'/data/db.php';
                 </section>
 
                 <section id="kennel-products">
-                    <h2 class="mt-4">Kennel <i class="<?php echo KennelProduct::$icon ?>"></i></h2>
+                    <h2 class="mt-4 mb-4">Kennel <i class="<?php echo KennelProduct::$icon ?>"></i></h2>
                     <div class="d-flex">
                         <?php foreach($kennel_products as $product) {
                             include __DIR__ .'/includes/cards/kennel_card.php';
@@ -36,7 +36,7 @@ include_once __DIR__ .'/data/db.php';
 
 
                 <section id="toy-products">
-                    <h2 class="mt-4">Toy <i class="<?php echo ToyProduct::$icon ?>"></i></h2>
+                    <h2 class="mt-4 mb-4">Toy <i class="<?php echo ToyProduct::$icon ?>"></i></h2>
                     <div class="d-flex">
                         <?php foreach($toy_products as $product) {
                             include __DIR__ .'/includes/cards/toy_card.php';
