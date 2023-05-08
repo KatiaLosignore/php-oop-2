@@ -36,6 +36,12 @@ class Product
         return $this->category;
     }
 
+    /** 
+     * Controllo esatto del nome
+     * 
+     * @param string $name nome
+     * @return string Ritorna una stringa contenente il nome
+    */
 
     public function setName($name)                                              
     {

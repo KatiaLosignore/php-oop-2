@@ -33,6 +33,8 @@ class FoodProduct extends Product
         return $this->ingredients;
     }
 
+    
+
     public function setExpiration($expiration)
     {
         $date= strtotime($expiration);
@@ -49,6 +51,13 @@ class FoodProduct extends Product
     {
         return date('d-m-Y', $this->expiration); 
     }
+
+     /** 
+     * Funzione che mi genera un booleano
+     * 
+     * @param string $date scadenza
+     * @return string Ritorna una stringa contenente che la data di scadenza è minore del giorno attuale
+    */
 
     public function isExpired($date = null)
     { 
