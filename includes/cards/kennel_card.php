@@ -10,5 +10,6 @@
         <p>Prezzo: € <?php echo $product->getPrice() ?></p>
         <p>Colore: <?php echo $product->getColor() ?></p>
         <p>Dimensione: <?php echo $product->getSize() ?></p>
+        <p>Peso: <?php echo $product->getWeight() ?></p>
     </div>
 </div>

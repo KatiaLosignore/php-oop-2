@@ -1,9 +1,12 @@
 <?php
 
 require_once __DIR__ .'/Category.php';
+require_once __DIR__ .'/../Traits/Weightable.php';
 
 class Product 
 {
+    use Weightable;
+
     protected $name;
     protected $brand;
     protected $code;

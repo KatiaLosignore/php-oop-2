@@ -11,6 +11,7 @@
         <p>Ingredienti: <?php echo $product->listIngredients() ?></p>
         <p>Prezzo: € <?php echo $product->getPrice() ?></p>
         <p>Scadenza: <?php echo $product->getExpiration() ?></p>
+        <p>Peso: <?php echo $product->getWeight() ?></p>
     </div>
 </div>
 

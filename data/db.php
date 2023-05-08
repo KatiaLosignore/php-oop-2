@@ -1,9 +1,11 @@
 <?php
 
+require_once __DIR__ .'/../Models/Product.php';
 require_once __DIR__ .'/../Models/Category.php';
 require_once __DIR__ .'/../Models/ToyProduct.php';
 require_once __DIR__ .'/../Models/FoodProduct.php';
 require_once __DIR__ .'/../Models/KennelProduct.php';
+
 
 
 $cat_category = new Category('Cat', 'fa-solid fa-cat');
@@ -18,6 +20,17 @@ $kennel_dog = new KennelProduct('Cuccia per cani', 'Spike Classic', '12342518', 
 
 $toy_cat = new ToyProduct('Gioco per gatti Trixie Catch', 'The Balls', '12897452', '50,00', "l Catch the Balls Trixie in plastica è una torre gioco che è stata specificatamente studiata per stimolare l'istinto di gioco e di caccia del gatto. Sui 3 piani della torre ci sono alcune palline rimovibili che il gatto deve spingere, urtare e inseguire per dare loro la caccia. Inoltre questo gioco stimola l'azione e la mobilità del tuo felino e ne allena l'abilità, l'intelligenza e la velocità di reazione.", $cat_category, ['Plastica', 'Nylon'], 'Grigio','Rotonda');
 $toy_dog = new ToyProduct('Gioco per Cane Palla Tpr', 'Arcaplanet', '81647326', '20,00', "Gioco Cane Palla Tpr con Punte Verde di Lovedì è una divertente pallina per cani con punte massaggianti per il divertimento quotidiano con Fido. Le delicate punte in gomma tpr massaggiano dolcemente del gengive del tuo cane che potrà divertirsi a mordicchiare il giocattolo. Disponibile in 2 misure: 8 cm e 13 cm. Materiale: TPR​. Gioco Cane Palla Tpr con Punte Verde suona: infatti questo giochino è dotato di squeaker interno​ che stimola il tuo cane a giocare.", $dog_category, ['Plastica', 'Gomma Naturale'], 'Verde', 'Rotonda');
+
+
+$food_cat->setWeight(3, 'kg');
+$food_dog->setWeight(3, 'kg');
+
+$kennel_cat->setWeight(50, 'kg');
+$kennel_dog->setWeight(70, 'kg');
+
+$toy_cat->setWeight(10, 'kg');
+$toy_dog->setWeight(12, 'kg');
+
 
 
 $food_products = [$food_cat, $food_dog];

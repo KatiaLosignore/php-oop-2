@@ -11,5 +11,6 @@
         <p>Colore: <?php echo $product->getColor() ?></p>
         <p>Materiali: <?php echo $product->listMaterials() ?></p>
         <p>Forma: <?php echo $product->getForm() ?></p>
+        <p>Peso: <?php echo $product->getWeight() ?></p>
     </div>
 </div>
