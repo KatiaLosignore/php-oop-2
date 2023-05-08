@@ -37,6 +37,11 @@ try {
     echo "Si è verificato un errore: " . $e->getMessage();
 }
 
+try {
+    echo $food_dog->setExpiration('2023-10-10');
+}  catch (Exception $e) {
+    echo "Attenzione: " . $e->getMessage();
+}
 
 $food_products = [$food_cat, $food_dog];
 

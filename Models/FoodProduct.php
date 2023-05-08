@@ -37,8 +37,10 @@ class FoodProduct extends Product
     {
         $date= strtotime($expiration);
 
-        if($this->isExpired($date)) return false;
-
+        if($this->isExpired($date)) {
+            throw new Exception('Il prodotto è scaduto!');
+        }
+        
         $this->expiration = $date;
 
     }
