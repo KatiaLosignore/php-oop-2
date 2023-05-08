@@ -31,6 +31,11 @@ $kennel_dog->setWeight(70, 'kg');
 $toy_cat->setWeight(10, 'kg');
 $toy_dog->setWeight(12, 'kg');
 
+try {
+    echo $food_cat->setName('Purina Felix Gatto');
+} catch (Exception $e) {
+    echo "Si è verificato un errore: " . $e->getMessage();
+}
 
 
 $food_products = [$food_cat, $food_dog];

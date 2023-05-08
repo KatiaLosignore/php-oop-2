@@ -45,7 +45,7 @@ class FoodProduct extends Product
 
     public function getExpiration()
     {
-        return date('d-m-Y', $this->expiration);
+        return date('d-m-Y', $this->expiration); 
     }
 
     public function isExpired($date = null)

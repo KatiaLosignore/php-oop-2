@@ -36,13 +36,18 @@ class Product
         return $this->category;
     }
 
-    public function setName($name)
+
+    public function setName($name)                                              
     {
+        if (is_numeric($name)) {
+            throw new Exception('Il valore passato non è un nome valido!');
+        }
+        
         $this->name = $name;
     }
 
     public function getName()
-    {
+    {   
         return $this->name;
     }
 
